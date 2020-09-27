@@ -18,7 +18,3 @@ CREATE TABLE `employeeTracker_db`.`employee` (
   `name` VARCHAR(30) NULL,
   PRIMARY KEY (`id`));
 
-  INSERT into department (name) VALUES ("");
-  INSERT into department (name) VALUES ("");
-  INSERT into department (name) VALUES ("");
-  INSERT into department (name) VALUES ("");
