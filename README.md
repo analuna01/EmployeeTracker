@@ -12,12 +12,22 @@ In order to run this application first you must do an 'npm init' in your termina
 ## Usage
 You may watch the video demonstration linked below to observe how this application can be utilized. 
 
+## Contributing
+
+Thanks to my classmates for contributing and helping improve this project.
+
+- @taliavazquez and 
+- @AldoCarrillo
+
 ## License
 MIT
 
 ## Questions
 - GitHub: github.com/analuna01
 - Email: luna.ana92@gmail.com
+
+## Screenshot Demo
+<img src= "employeeTracker_demo">
 
 ## Video Demo
 
