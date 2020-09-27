@@ -157,13 +157,23 @@ function addRecord(tableName) {
         inquirer
             .prompt([
                 {
-                    name: "role",
+                    name: "title",
                     type: "input",
-                    message: "What is the department's name?"
+                    message: "What is the new title you would like to add?"
+                },
+                {
+                    name: "salary",
+                    type: "input",
+                    message: "What is the salary?"
+                },
+                {
+                    name: "department_id",
+                    type: "input",
+                    message: "What is the department?"
                 },
             ])
             .then(function (answer) {
-                var query = `INSERT INTO role (role) VALUES ('${answer.role}')`;
+                var query = `INSERT INTO role (title, salary, department_id) VALUES ('${answer.title}', '${answer.salary}', '${answer.department_id}')`;
 
                 connection.query(query, function (err, res) {
                     if (err) throw err;
@@ -173,6 +183,6 @@ function addRecord(tableName) {
             });
 
 
-    }
+    };
 
 };
