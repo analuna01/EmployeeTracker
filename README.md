@@ -27,7 +27,7 @@ MIT
 - Email: luna.ana92@gmail.com
 
 ## Screenshot Demo
-<img src= "employeeTracker_demo">
+<img src="employeeTracker_demo.jpg">
 
 ## Video Demo
 
