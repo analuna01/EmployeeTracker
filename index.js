@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 
 main();
 
-// function which prompts the user for what action they should take
+// function which prompts the user which action they need view or modify
 function main() {
     inquirer
         .prompt({
@@ -30,7 +30,7 @@ function main() {
         })
 
         .then(function (answer) {
-            // based on their answer, either call the bid or the post functions
+            // based on the answer either select a table to view or add a record.
             switch (answer.action) {
                 case "View Department":
                     selectTable("department");
@@ -133,7 +133,7 @@ function addRecord(tableName) {
 
     }
     else if (tableName == "department") {
-        // prompt for info about the item being put up for auction
+        // prompt to add new department
         inquirer
             .prompt([
                 {
@@ -154,6 +154,7 @@ function addRecord(tableName) {
 
     }
     else if (tableName == "role") {
+        // prompt to add new role
         inquirer
             .prompt([
                 {
